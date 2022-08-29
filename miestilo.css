@@ -1,0 +1,304 @@
+
+body { /*general */
+  background-color: #F6D7D1 ;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+}
+.titulo {
+    background-color: #990033;
+    box-shadow: 60px 16px #D81B60;
+    -webkit-text-stroke: 2px black;
+    color: transparent; 
+    font-size: larger;
+    
+}
+
+/* acomodo de cuadros*/
+  .cuadro:nth-child(1) {
+    order: 1;
+  }
+  .cuadro:nth-child(2) {
+    order: 9;
+  }
+  .cuadro:nth-child(3) {
+    order: 2;
+  }
+  .cuadro:nth-child(4) {
+    order: 10;
+  }
+  .cuadro:nth-child(5) {
+    order: 3;
+  }
+  .cuadro:nth-child(6) {
+    order: 11;
+  }
+  .cuadro:nth-child(7) {
+    order: 4;
+  }
+  .cuadro:nth-child(8) {
+    order: 12;
+  }
+  .cuadro:nth-child(9) {
+    order: 5;
+  }
+  .cuadro:nth-child(10) {
+    order: 13;
+  }
+  .cuadro:nth-child(11) {
+    order: 6;
+  }
+  .cuadro:nth-child(12) {
+    order: 14;
+  }
+  .cuadro:nth-child(13) {
+    order: 7;
+  }
+  .cuadro:nth-child(14) {
+    order: 15;
+  }
+  .cuadro:nth-child(15) {
+    order: 8;
+  }
+
+  #lineacompleta .cuadro--num1 {
+    background-color: #CD6155;
+  }
+  #lineacompleta .cuadro--num1 .cabecera::after {
+    border-color: #CD6155;
+  }
+  #lineacompleta .cuadro--num2 {
+    background-color: #EC7063;
+  }
+  #lineacompleta .cuadro--num2 .cabecera::after {
+    border-color: #EC7063;
+  }
+  #lineacompleta .cuadro--num3 {
+    background-color: #AF7AC5;
+  }
+  #lineacompleta .cuadro--num3 .cabecera::after {
+    border-color: #AF7AC5;
+  }
+  #lineacompleta .cuadro--num4 {
+    background-color: #A569BD;
+  }
+  #lineacompleta .cuadro--num4 .cabecera::after {
+    border-color: #A569BD;
+  }
+  #lineacompleta .cuadro--num5 {
+    background-color: #5499C7;
+  }
+  #lineacompleta .cuadro--num5 .cabecera::after {
+    border-color: #5499C7;
+  }
+  #lineacompleta .cuadro--num6 {
+    background-color: #5DADE2;
+  }
+  #lineacompleta .cuadro--num6 .cabecera::after {
+    border-color: #5DADE2;
+  }
+  #lineacompleta .cuadro--num7 {
+    background-color: #48C9B0;
+  }
+  #lineacompleta .cuadro--num7 .cabecera::after {
+    border-color: #48C9B0;
+  }
+  
+  #lineacompleta .cuadro--num8 {
+    background-color: #45B39D;
+  }
+  #lineacompleta .cuadro--num8 .cabecera::after {
+    border-color: #45B39D;
+  }
+  #lineacompleta .cuadro--num9 {
+    background-color: #52BE80;
+  }
+  #lineacompleta .cuadro--num9 .cabecera::after {
+    border-color: #52BE80;
+  }
+  #lineacompleta .cuadro--num10 {
+    background-color: #58D68D;
+  }
+  #lineacompleta .cuadro--num10 .cabecera::after {
+    border-color: #58D68D;
+  }
+  #lineacompleta .cuadro--num11 {
+    background-color: #F4D03F;
+  }
+  #lineacompleta .cuadro--num11 .cabecera::after {
+    border-color: #F4D03F;
+  }
+  #lineacompleta .cuadro--num12 {
+    background-color: #F5B041;
+  }
+  #lineacompleta .cuadro--num12 .cabecera::after {
+    border-color: #F5B041;
+  }
+  #lineacompleta .cuadro--num13 {
+    background-color: #EB984E;
+  }
+  #lineacompleta .cuadro--num13 .cabecera::after {
+    border-color: #EB984E;
+  }
+  #lineacompleta .cuadro--num14 {
+    background-color: #DC7633;
+  }
+  #lineacompleta .cuadro--num14 .cabecera::after {
+    border-color: #DC7633;
+  }
+  #lineacompleta .cuadro--num15 {
+    background-color: #D62909;
+  }
+  #lineacompleta .cuadro--num15 .cabecera::after {
+    border-color: #D62909;
+  }
+/*bajarlo poquito*/
+  #lineacompleta .cuadro:nth-child(2) {
+    margin-top: 200px;
+}
+  /* linea en medio*/
+  #lineacompleta .cuadro-completo::after {
+    z-index: 1;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    border-left: 1px solid rgba(191, 191, 191, 0.4);
+  }
+  #lineacompleta .cuadro:nth-child(even) .cabecera::before, #lineacompleta .cuadro:nth-child(odd) .cabecera::before {
+    position: absolute;
+    content: "";
+    width: 9px;
+    height: 9px;
+    background-color: gray
+}
+  #lineacompleta h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 200;
+    margin-bottom: 20px;
+  }
+  #lineacompleta p.leader {
+    text-align: center;
+    max-width: 90%;
+    margin: auto;
+    margin-bottom: 45px;
+  }
+  #lineacompleta .cuadro-completo {
+    position: relative;
+    margin: auto;
+  }
+
+  /**AQUIIII*/
+@media (min-width: 1000px) {
+    #lineacompleta .cuadro-completo {
+        display: flex;
+        flex-flow: column wrap;
+        width: 1170px;
+        height: 4000px;
+        margin: 0 auto;
+    }
+  }
+ 
+ /*poner cuadro encima de la linea*/
+  #lineacompleta .cuadro {
+    position: relative;
+    display: block;
+    margin: 10px auto 80px;
+    max-width: 94%;
+    z-index: 2;
+  }
+ 
+  /*tamaño de cuadros*/
+  @media (min-width: 1000px) {
+    #lineacompleta .cuadro {
+        max-width: 450px;
+        height: 400px;
+        margin: 90px;
+        margin-top: 45px;
+        margin-bottom: 45px;
+    }
+     /*cuadro de la linea derechos*/
+    #lineacompleta .cuadro:nth-child(even) {
+      margin-left: 45px;
+    }
+    #lineacompleta .cuadro:nth-child(even) .cabecera::before {
+        right: 490px;
+    }
+    /*cuadrado de la linea, izquierdos*/
+    #lineacompleta .cuadro:nth-child(odd) {
+        margin-right: 45px;
+    }
+    #lineacompleta .cuadro:nth-child(odd) .cabecera::before {
+        left: 490px;
+    }
+  }
+  /*tamaño cabecera de cuadros*/
+  #lineacompleta .cuadro .cabecera .number-box {
+    display: inline;
+    float: left;
+    margin: 15px;
+    padding: 10px;
+    font-size: 35px;
+    line-height: 35px;
+    font-weight: 600;
+    background: rgba(0, 0, 0, 0.2);
+  }
+  #lineacompleta .cuadro .cabecera {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-weight: 400;
+  }
+  @media (min-width: 1000px) {
+    #lineacompleta .cuadro .body {
+        height: 315px;
+    }
+  }
+  
+  
+  #lineacompleta .cuadro .cabecera h2 {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: inherit;
+    letter-spacing: 2px;
+    margin: 0;
+    padding-bottom: 6px;
+    line-height: 1rem;
+  }
+  #lineacompleta .cuadro .body img {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    max-height:200px;
+    display:block;
+    margin:auto;
+  }
+
+  @media (min-width: 500px) {
+    #lineacompleta .cuadro .cabecera h2 {
+        font-size: 165%;
+        line-height: 1.5rem;
+    }
+  }
+  #lineacompleta .cuadro .cabecera h2 span {
+    display: block;
+    font-size: 0.6rem;
+    margin: 0;
+  }
+ 
+  #lineacompleta .cuadro .body {
+    background: #fff;
+    border: 1px solid rgba(191, 191, 191, 0.4);
+    border-top: 0;
+    padding: 15px;
+  }
+ 
+  #lineacompleta .cuadro .body p {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 15px;
+
+  }
+  
